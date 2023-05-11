@@ -2,7 +2,7 @@ package com.murilo.helpdesk.domain.enums;
 
 public enum Status {
 	
-		ADMIN(0, "ROLE_ADMIN"), CLIENT(1, "ROLE_CLIENT"), TECHNICIAN(2, "ROLE_TECHNICIAN");
+	OPEN(0, "OPEN"), PROGRESS(2,"PROGRESS"), CLOSED(2,"CLOSED");
 
 	private Integer code;
 	public Integer getCode() {

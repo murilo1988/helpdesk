@@ -2,7 +2,8 @@ package com.murilo.helpdesk.domain.enums;
 
 public enum Perfil {
 	
-		OPEN(0, "OPEN"), PROGRESS(2,"PROGRESS"), CLOSED(2,"CLOSED");
+		
+	ADMIN(0, "ROLE_ADMIN"), CLIENT(1, "ROLE_CLIENT"), TECHNICIAN(2, "ROLE_TECHNICIAN");
 
 	private Integer code;
 	private String description;
