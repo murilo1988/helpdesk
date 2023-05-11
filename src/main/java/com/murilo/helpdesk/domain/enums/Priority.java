@@ -1,6 +1,6 @@
 package com.murilo.helpdesk.domain.enums;
 
-public enum Prioridade {
+public enum Priority {
 	
 		HIGH(0, "HIGH_PRIORITY"), MEDIUM(1, "MEDIUM_PRIOITY"), LOW(2, "LOW_PRIORITY");
 
@@ -23,15 +23,15 @@ public enum Prioridade {
 
 	private String description;
 	
-	private Prioridade(Integer code, String description) {
+	private Priority(Integer code, String description) {
 		this.code = code;
 		this.description = description;
 	}
-	public  static Prioridade toEnum(Integer cod) {
+	public  static Priority toEnum(Integer cod) {
 		if(cod == null) {
 			return null;
 		}
-		for(Prioridade perfilValues : Prioridade.values()) {
+		for(Priority perfilValues : Priority.values()) {
 			if(cod.equals(perfilValues.getCode())){
 				return perfilValues;
 			}
